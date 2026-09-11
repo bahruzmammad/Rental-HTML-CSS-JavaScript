@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Premium car rental service with a wide selection of cars, SUVs, vans, and electric vehicles for your next trip."
+    />
+    <meta
+      name="keywords"
+      content="car rental, car hire, rental cars, SUVs, vans, electric cars, premium car rental"
+    />
+    <meta name="author" content="Bahruz Mammadly" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      property="og:title"
+      content="Premium Car Rental | Find Your Perfect Vehicle"
+    />
+    <meta
+      property="og:description"
+      content="Browse and rent reliable vehicles for your next trip with Premium Car Rental."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="assets/images/header.png" type="image/png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Premium Car Rental | Find Your Perfect Vehicle</title>
+  </head>
+
+  <body>
+    <header class="site-header" id="home">
+      <nav class="navigation" aria-label="Main navigation">
+        <div class="navigation__header">
+          <div class="navigation__logo">
+            <a href="#home" aria-label="Premium Car Rental home"> RENTAL </a>
+          </div>
+
+          <button
+            class="navigation__menu-button"
+            id="navigation-menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="navigation-menu"
+          >
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+
+        <ul class="navigation__menu" id="navigation-menu">
+          <li class="navigation__item">
+            <a href="#home">Home</a>
+          </li>
+
+          <li class="navigation__item">
+            <a href="#vehicles">Vehicles</a>
+          </li>
+
+          <li class="navigation__item">
+            <a href="#featured-vehicles">Featured Cars</a>
+          </li>
+
+          <li class="navigation__item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="navigation__actions">
+          <a class="button" href="#featured-vehicles"> Get Started </a>
+        </div>
+      </nav>
+
+      <div class="hero" id="rental-search">
+        <div class="hero__content">
+          <p class="hero__subtitle">PREMIUM CAR RENTAL</p>
+
+          <h1 class="hero__title">FIND THE RIGHT CAR FOR YOUR JOURNEY</h1>
+
+          <p class="hero__description">
+            Choose from a wide range of comfortable and reliable vehicles for
+            your next trip.
+          </p>
+
+          <form class="rental-search" action="/" method="get">
+            <div class="form-group">
+              <label for="pickup-location">
+                Pick-up &amp; return location
+              </label>
+
+              <input
+                type="text"
+                name="location"
+                id="pickup-location"
+                placeholder="Dallas, Texas"
+                autocomplete="address-level2"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="pickup-date">Pick-up date</label>
+
+              <input
+                type="text"
+                name="pickup"
+                id="pickup-date"
+                placeholder="Aug 16, 10:00 AM"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="return-date">Return date</label>
+
+              <input
+                type="text"
+                name="return"
+                id="return-date"
+                placeholder="Aug 18, 10:00 PM"
+              />
+            </div>
+
+            <button
+              class="button"
+              type="submit"
+              aria-label="Search available vehicles"
+            >
+              <i class="ri-search-line"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="hero__image">
+          <img src="assets/images/header.png" alt="Premium rental car" />
+        </div>
+      </div>
+
+      <a
+        class="scroll-down"
+        href="#vehicles"
+        aria-label="Scroll to vehicle section"
+      >
+        <i class="ri-arrow-down-line"></i>
+      </a>
+    </header>
+
+    <main>
+      <section class="section-container vehicle-range" id="vehicles">
+        <div class="section-heading">
+          <p class="section-subtitle">OUR VEHICLES</p>
+
+          <h2 class="section-title">WIDE RANGE OF VEHICLES</h2>
+
+          <p class="section-description">
+            Explore different vehicle types and choose the one that best fits
+            your trip.
+          </p>
+        </div>
+
+        <div class="vehicle-range__grid">
+          <article class="vehicle-category">
+            <img
+              src="assets/images/range-1.jpg"
+              alt="Cars available for rental"
+              loading="lazy"
+            />
+
+            <div class="vehicle-category__details">
+              <h3>Cars</h3>
+
+              <a href="#featured-vehicles" aria-label="View rental cars">
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="vehicle-category">
+            <img
+              src="assets/images/range-2.jpg"
+              alt="SUVs available for rental"
+              loading="lazy"
+            />
+
+            <div class="vehicle-category__details">
+              <h3>SUVs</h3>
+
+              <a href="#featured-vehicles" aria-label="View rental SUVs">
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="vehicle-category">
+            <img
+              src="assets/images/range-3.jpg"
+              alt="Vans available for rental"
+              loading="lazy"
+            />
+
+            <div class="vehicle-category__details">
+              <h3>Vans</h3>
+
+              <a href="#featured-vehicles" aria-label="View rental vans">
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="vehicle-category">
+            <img
+              src="assets/images/range-4.jpg"
+              alt="Electric vehicles available for rental"
+              loading="lazy"
+            />
+
+            <div class="vehicle-category__details">
+              <h3>Electric</h3>
+
+              <a href="#featured-vehicles" aria-label="View electric vehicles">
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-container location-section" id="locations">
+        <div class="location-section__image">
+          <img
+            src="assets/images/location.png"
+            alt="Car rental location"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="location-section__content">
+          <p class="section-subtitle">RENT A CAR NEAR YOU</p>
+
+          <h2 class="section-title">FIND A CAR IN YOUR LOCATION</h2>
+
+          <p class="section-description">
+            Find a vehicle that matches your needs from our available rental
+            options. Choose a comfortable car, spacious SUV, practical van, or
+            electric vehicle for your next journey.
+          </p>
+
+          <div class="location-section__actions">
+            <a class="button" href="#rental-search"> Find a Location </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="featured-vehicles"
+        id="featured-vehicles"
+        aria-labelledby="featured-vehicles-title"
+      >
+        <div class="section-heading">
+          <p class="section-subtitle">FEATURED VEHICLES</p>
+
+          <h2 class="section-title" id="featured-vehicles-title">
+            CHOOSE YOUR CAR
+          </h2>
+
+          <p class="section-description">
+            Browse our featured vehicles and find an option that fits your
+            travel plans.
+          </p>
+        </div>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide">
+              <div class="vehicle-card">
+                <img
+                  src="assets/images/select-1.png"
+                  alt="Featured rental car"
+                  loading="lazy"
+                />
+
+                <div class="vehicle-card__specifications">
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-speed-up-line"></i>
+                    </span>
+
+                    <h3>
+                      200
+                      <span>km/h</span>
+                    </h3>
+                  </div>
+
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-settings-5-line"></i>
+                    </span>
+
+                    <h3>
+                      6
+                      <span>speed</span>
+                    </h3>
+                  </div>
+
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-roadster-line"></i>
+                    </span>
+
+                    <h3>
+                      5
+                      <span>seats</span>
+                    </h3>
+                  </div>
+
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-signpost-line"></i>
+                    </span>
+
+                    <h3>
+                      15
+                      <span>mileage</span>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <div class="vehicle-card">
+                <img
+                  src="assets/images/select-2.png"
+                  alt="Featured rental car"
+                  loading="lazy"
+                />
+
+                <div class="vehicle-card__specifications">
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-speed-up-line"></i>
+                    </span>
+
+                    <h3>
+                      215
+                      <span>km/h</span>
+                    </h3>
+                  </div>
+
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-settings-5-line"></i>
+                    </span>
+
+                    <h3>
+                      6
+                      <span>speed</span>
+                    </h3>
+                  </div>
+
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-roadster-line"></i>
+                    </span>
+
+                    <h3>
+                      5
+                      <span>seats</span>
+                    </h3>
+                  </div>
+
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-signpost-line"></i>
+                    </span>
+
+                    <h3>
+                      16
+                      <span>mileage</span>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <div class="vehicle-card">
+                <img
+                  src="assets/images/select-3.png"
+                  alt="Premium sports rental car"
+                  loading="lazy"
+                />
+
+                <div class="vehicle-card__specifications">
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-speed-up-line"></i>
+                    </span>
+
+                    <h3>
+                      306
+                      <span>km/h</span>
+                    </h3>
+                  </div>
+
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-settings-5-line"></i>
+                    </span>
+
+                    <h3>
+                      6
+                      <span>speed</span>
+                    </h3>
+                  </div>
+
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-roadster-line"></i>
+                    </span>
+
+                    <h3>
+                      5
+                      <span>seats</span>
+                    </h3>
+                  </div>
+
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-signpost-line"></i>
+                    </span>
+
+                    <h3>
+                      12
+                      <span>mileage</span>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <div class="vehicle-card">
+                <img
+                  src="assets/images/select-4.png"
+                  alt="Luxury sports rental car"
+                  loading="lazy"
+                />
+
+                <div class="vehicle-card__specifications">
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-speed-up-line"></i>
+                    </span>
+
+                    <h3>
+                      350
+                      <span>km/h</span>
+                    </h3>
+                  </div>
+
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-settings-5-line"></i>
+                    </span>
+
+                    <h3>
+                      6
+                      <span>speed</span>
+                    </h3>
+                  </div>
+
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-roadster-line"></i>
+                    </span>
+
+                    <h3>
+                      2
+                      <span>seats</span>
+                    </h3>
+                  </div>
+
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-signpost-line"></i>
+                    </span>
+
+                    <h3>
+                      8
+                      <span>mileage</span>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <div class="vehicle-card">
+                <img
+                  src="assets/images/select-5.png"
+                  alt="Premium rental car"
+                  loading="lazy"
+                />
+
+                <div class="vehicle-card__specifications">
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-speed-up-line"></i>
+                    </span>
+
+                    <h3>
+                      254
+                      <span>km/h</span>
+                    </h3>
+                  </div>
+
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-settings-5-line"></i>
+                    </span>
+
+                    <h3>
+                      6
+                      <span>speed</span>
+                    </h3>
+                  </div>
+
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-roadster-line"></i>
+                    </span>
+
+                    <h3>
+                      5
+                      <span>seats</span>
+                    </h3>
+                  </div>
+
+                  <div class="vehicle-specification">
+                    <span>
+                      <i class="ri-signpost-line"></i>
+                    </span>
+
+                    <h3>
+                      10
+                      <span>mileage</span>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="vehicle-rental">
+          <div class="vehicle-rental__price">
+            <span>
+              <i class="ri-price-tag-3-line"></i>
+            </span>
+
+            <div>
+              <span id="vehicle-rental-price">225</span>
+              / day
+            </div>
+          </div>
+
+          <div class="vehicle-rental__actions">
+            <button class="button" type="button">View Details</button>
+
+            <button class="button" type="button">Rent Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-container customer-stories" id="stories">
+        <div class="section-heading">
+          <p class="section-subtitle">TRAVEL STORIES</p>
+
+          <h2 class="section-title">STORIES BEHIND THE WHEEL</h2>
+
+          <p class="section-description">
+            Discover simple travel ideas and helpful information for your next
+            road trip.
+          </p>
+        </div>
+
+        <div class="customer-stories__grid">
+          <article class="story-card">
+            <div class="story-card__date">
+              <span>12</span>
+
+              <div>
+                <p>January</p>
+                <p>2024</p>
+              </div>
+            </div>
+
+            <h3>Adventures on the Open Road</h3>
+
+            <p>
+              Discover simple road trip ideas and learn how choosing the right
+              rental car can make your journey easier.
+            </p>
+
+            <img
+              src="assets/images/story-1.jpg"
+              alt="Road trip with a rental car"
+              loading="lazy"
+            />
+          </article>
+
+          <article class="story-card">
+            <div class="story-card__date">
+              <span>04</span>
+
+              <div>
+                <p>March</p>
+                <p>2024</p>
+              </div>
+            </div>
+
+            <h3>Luxury and Comfort on the Road</h3>
+
+            <p>
+              Learn how a comfortable rental vehicle can make both short trips
+              and longer journeys more enjoyable.
+            </p>
+
+            <img
+              src="assets/images/story-2.jpg"
+              alt="Luxury rental car"
+              loading="lazy"
+            />
+          </article>
+
+          <article class="story-card">
+            <div class="story-card__date">
+              <span>18</span>
+
+              <div>
+                <p>June</p>
+                <p>2024</p>
+              </div>
+            </div>
+
+            <h3>Choosing the Right Car for Your Trip</h3>
+
+            <p>
+              Find useful tips for choosing a rental vehicle based on your
+              destination, passengers, and travel plans.
+            </p>
+
+            <img
+              src="assets/images/story-3.jpg"
+              alt="Rental car for a road trip"
+              loading="lazy"
+            />
+          </article>
+        </div>
+      </section>
+
+      <section class="vehicle-banner" aria-label="Featured rental vehicles">
+        <div class="vehicle-banner__wrapper">
+          <img
+            src="assets/images/banner-1.png"
+            alt="Rental vehicle"
+            loading="lazy"
+          />
+
+          <img
+            src="assets/images/banner-2.png"
+            alt="Rental vehicle"
+            loading="lazy"
+          />
+
+          <img
+            src="assets/images/banner-3.png"
+            alt="Rental vehicle"
+            loading="lazy"
+          />
+
+          <img
+            src="assets/images/banner-4.png"
+            alt="Rental vehicle"
+            loading="lazy"
+          />
+
+          <img
+            src="assets/images/banner-5.png"
+            alt="Rental vehicle"
+            loading="lazy"
+          />
+
+          <img
+            src="assets/images/banner-6.png"
+            alt="Rental vehicle"
+            loading="lazy"
+          />
+
+          <img
+            src="assets/images/banner-7.png"
+            alt="Rental vehicle"
+            loading="lazy"
+          />
+
+          <img
+            src="assets/images/banner-8.png"
+            alt="Rental vehicle"
+            loading="lazy"
+          />
+
+          <img
+            src="assets/images/banner-9.png"
+            alt="Rental vehicle"
+            loading="lazy"
+          />
+
+          <img
+            src="assets/images/banner-10.png"
+            alt="Rental vehicle"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="app-download" id="mobile-app">
+        <div class="section-container app-download__container">
+          <div class="app-download__content">
+            <p class="section-subtitle">MOBILE APP</p>
+
+            <h2 class="section-title">TAKE YOUR RENTAL EXPERIENCE WITH YOU</h2>
+
+            <p class="section-description">
+              Stay connected with your rental experience and manage your vehicle
+              options from your mobile device.
+            </p>
+
+            <div class="app-download__links">
+              <a href="#" aria-label="Download on the App Store">
+                <img
+                  src="assets/images/apple.png"
+                  alt="Download on the App Store"
+                  loading="lazy"
+                />
+              </a>
+
+              <a href="#" aria-label="Get it on Google Play">
+                <img
+                  src="assets/images/google.png"
+                  alt="Get it on Google Play"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="app-download__image">
+            <img
+              src="assets/images/download.png"
+              alt="Premium Car Rental mobile app"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter" id="contact">
+        <div class="section-container newsletter__container">
+          <p class="section-subtitle">STAY UPDATED</p>
+
+          <h2 class="section-title">GET THE LATEST RENTAL NEWS</h2>
+
+          <p class="section-description">
+            Subscribe for rental updates, travel tips, and new vehicle
+            information.
+          </p>
+
+          <form class="newsletter__form" action="/" method="post">
+            <label class="visually-hidden" for="email-address">
+              Email address
+            </label>
+
+            <input
+              type="email"
+              name="email"
+              id="email-address"
+              placeholder="Your email address"
+              autocomplete="email"
+              required
+            />
+
+            <button
+              class="button"
+              type="submit"
+              aria-label="Subscribe to newsletter"
+            >
+              <i class="ri-send-plane-fill"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-container site-footer__container">
+        <div class="site-footer__column">
+          <h3>Resources</h3>
+
+          <ul class="site-footer__links">
+            <li>
+              <a href="#">Rental Guide</a>
+            </li>
+
+            <li>
+              <a href="#">Vehicle Information</a>
+            </li>
+
+            <li>
+              <a href="#">Help Center</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="site-footer__column">
+          <h3>Company</h3>
+
+          <ul class="site-footer__links">
+            <li>
+              <a href="#">About Us</a>
+            </li>
+
+            <li>
+              <a href="#">Careers</a>
+            </li>
+
+            <li>
+              <a href="#">News</a>
+            </li>
+
+            <li>
+              <a href="#contact">Support</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="site-footer__column">
+          <h3>Services</h3>
+
+          <ul class="site-footer__links">
+            <li>
+              <a href="#vehicles">Vehicle Rental</a>
+            </li>
+
+            <li>
+              <a href="#locations">Rental Locations</a>
+            </li>
+
+            <li>
+              <a href="#featured-vehicles">Featured Vehicles</a>
+            </li>
+
+            <li>
+              <a href="#mobile-app">Mobile App</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="site-footer__column">
+          <h3>Follow Us</h3>
+
+          <ul class="site-footer__socials">
+            <li>
+              <a href="#" aria-label="Facebook">
+                <i class="ri-facebook-fill"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="Twitter">
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="LinkedIn">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>Copyright © 2024 Premium Car Rental. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
